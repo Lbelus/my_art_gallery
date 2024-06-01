@@ -1,0 +1,18 @@
+<!DOCTYPE hml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX + Rust Example</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/htmx.org@1.4.1"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>HTMX + Rust Example</h1>
+        <p>Welcome, {{ name }}! This is a dynamically rendered page using Askama templates in Rust.</p>
+        <button hx-get="/hello" hx-target="#greeting" hx-swap="innerHTML">Say Hello</button>
+        <div id="greeting"></div>
+    </div>
+</body>
+</html>
