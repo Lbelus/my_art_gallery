@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classic Art Gallery</title>
+    <title>La Galerie Brocante achat vente objet d'art</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header class="text-center p-4">
-        <h1 class="gallery-title">Art Gallery</h1>
+        <h1 class="gallery-title">La Galerie</h1>
     </header>
 
     <main class="container mx-auto p-4">
@@ -192,19 +193,26 @@
 
         <!-- About Section -->
         <section class="mt-8">
-            <h2 class="section-title">About Classic Art Gallery</h2>
-            <p class="art-description">The Classic Art Gallery is dedicated to preserving and showcasing the finest examples of artistic expression throughout history. Located in the heart of the city, our gallery provides a serene and inspiring environment for art enthusiasts and newcomers alike.</p>
-            <p class="art-description"><strong>Location:</strong> 123 Art Street, Art City, AC 12345</p>
+            <h2 class="section-title">La Galerie</h2>
+            <p class="art-description">Une galerie brocante sur la place l'Abbé Saint-Pierre à Saint-Pierre-Eglise.</p>
+            <p class="art-description"><strong>Location:</strong> 62 Pl. de l'Abbé de Saint-Pierre, 50330 Saint-Pierre-Église</p>
             <p class="art-description"><strong>Contact Information:</strong> Phone: (123) 456-7890 | Email: info@classicartgallery.com</p>
         </section>
     </main>
 
     <footer class="text-center p-4 mt-4">
-        <p>&copy; 2024 Classic Art Gallery. All rights reserved.</p>
-        <p>&copy; Made with Rust and HTMX.</p>
+        <p>&copy; 2024 La Galerie Brocante achat vente objet d'art. Tous droits réservés.</p>
+        <p>&copy; Realisé avec Rust et HTMX.</p>
     </footer>
+    
+    <div class="cookie-warning" id="cookie-warning">
+        This site does not make use of cookies for any commercial operation.
+        <button id="accept-cookies">Got it!</button>
+    </div>
 
+    <script src="js/cookies.js"></script>
     <!-- HTMX library -->
     <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+
 </body>
 </html>
