@@ -21,9 +21,7 @@ async fn main() {
             warp::reply::html(template.render().unwrap())
         });
     let static_files = warp::fs::dir("static");
-    let hello = warp::path("hello")
-        .map(|| warp::reply::html("Hello, HTMX + Rust!"));
-    let routes = template_route.or(hello).or(static_files);
+    let routes = template_route.or(static_files);
     
     log::info!("Starting server at port {}", port);
     warp::serve(routes)
