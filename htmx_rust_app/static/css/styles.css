@@ -81,3 +81,16 @@ body {
     cursor: pointer;
     border-radius: 3px;
 }
+
+.language-switch button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.language-switch button.active {
+    background-color: #161617;
+    color: white;
+    border-color: #161617;
+}
