@@ -98,7 +98,7 @@ body {
     opacity: 0;
     }
 img {
-    transition: opacity 300ms ease-in;
+    transition: opacity 3000ms ease-in;
 }
 .whitespace-pre-line {
     white-space: pre-line;

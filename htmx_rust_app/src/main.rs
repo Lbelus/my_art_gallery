@@ -36,7 +36,7 @@ async fn main() {
     dotenv().ok();
     env_logger::init();
     let port = env::var("PORT").unwrap_or_else(|_| "3000".to_string()).parse().unwrap();
-    
+
     let data = fs::read_to_string("static/images.json").expect("Unable to read file");
     let images: Vec<ImageData> = serde_json::from_str(&data).expect("JSON was not well-formatted");
 
