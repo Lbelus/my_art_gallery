@@ -94,3 +94,12 @@ body {
     color: white;
     border-color: #161617;
 }
+.htmx-settling img {
+    opacity: 0;
+    }
+img {
+    transition: opacity 300ms ease-in;
+}
+.whitespace-pre-line {
+    white-space: pre-line;
+}

@@ -7,6 +7,7 @@
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
 </head>
 <body>
     <header class="text-center p-4">
@@ -27,295 +28,32 @@
 
         <!-- Gallery Section -->
         <section>
-            <div class="art-item">
-                <img src="images/img1.png" alt="Art 1" class="w-full h-auto">
-                <div>
-                    <h2 class="art-title" data-en="Self-portrait of Titan" data-fr="Autoportrait de Titan">Autoportrait de Titan</h2>
-                    <p class="art-description" 
-                        data-en="Acrylic on 3D canvas representing me with my hat, cane, and Perfecto. 
-                            <br>Work protected by copyright. 
-                            <br>Member: A.D.A.G.P Paris. 
-                            <br>Member of the Taylor Foundation Paris. 
-                            <br>Artist Works, Paintings, Acrylic. 
-                            <br>Author: Titan. 
-                            <br>89 x 116 cm / 35 x 45.7 in. Weight 3 kg / 6.61 lbs. 
-                            <br>Themes: Portrait, Self-portrait / Origins: France / Genres: Cubism / 
-                            <br>Characteristics: Signed / Authenticity: Original / Types of Artists: Leisure Artists / Supports: On Canvas / Artistic Movement: French School / Period: Contemporary.
-                            <br>Copyright Titan&copy;"
-                        data-fr="Acrylique sur toile 3d me représentant avec mon chapeau, ma canne et mon Perfecto.
-                            <br>Œuvre protégée par des droits d'auteur.
-                            <br>Adhérent: A. D. A. G. P Paris.
-                            <br>Membre de la Fondation Taylor Paris.
-                            <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                            <br>Auteur: Titan.
-                            <br>89 x  116 cm  /   35 x  45.7 in. Poids 3 kg   /  6.61 lbs.
-                            <br>Thèmes: Portrait, Autoportrait  /   Origines: France  /   Genres: Cubisme  /
-                            <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                            <br>Copyright Titan&copy;">
-                            Acrylique sur toile 3d me représentant avec mon chapeau, ma canne et mon Perfecto.
-                            <br>Œuvre protégée par des droits d'auteur.
-                            <br>Adhérent: A. D. A. G. P Paris.
-                            <br>Membre de la Fondation Taylor Paris.
-                            <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                            <br>Auteur: Titan.
-                            <br>89 x  116 cm  /   35 x  45.7 in. Poids 3 kg   /  6.61 lbs.
-                            <br>Thèmes: Portrait, Autoportrait  /   Origines: France  /   Genres: Cubisme  /
-                            <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                            <br>Copyright Titan&copy;</p>
-                </div>
+            <div hx-get="/img/img1" hx-trigger="load" class="art-item">
+                <img src="images/bars.svg" alt="Art 1" class="htmx-indicator w-full h-auto">
             </div>
-            <div class="art-item">
-                <img src="images/img2.png" alt="Art 2" class="w-full h-auto">
-                <div>
-                    <h2 class="art-title" data-en="Stradivarius" data-fr="Stradivarius">Stradivarius</h2>
-                    <p class="art-description" 
-                        data-en="Stradivarius Violin Acrylic on 3D canvas. This painting represents the profile portrait of Antonio Stradivari merged into one of his creations (violin). Stradivari is dead, Stradivarius still lives 1644-1737 (93 years).
-                        <br>Work protected by copyright.
-                        <br>Member: A.D.A.G.P Paris.
-                        <br>Member of the Taylor Foundation Paris.
-                        <br>Artist Works, Paintings, Acrylic.
-                        <br>Author: Titan.
-                        <br>54.5 x  65.5 cm  /   21.5 x  25.8 in. Weight 2.5 kg   /  5.51 lbs.
-                        <br>Themes: Characters  /   Origins: France  /   Genres: Symbolism  /
-                        <br>Characteristics: Signed  /   Authenticity: Original  /   Types of Artists: Leisure Artists  /   Supports: On Canvas  /   Artistic Movement: French School  /   Period: Contemporary.
-                        <br>Copyright Titan&copy;"
-                        data-fr="Violon Stradivarius Acrylique sur toile 3d. Cette toile représente le portrait de profil d-Antonio Stradivari fondu dans une de ses créations (violon). Stradivari est mort, Stradivarius vit encore 1644-1737 (93 ans).
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan.
-                        br>54.5 x  65.5 cm  /   21.5 x  25.8 in. Poids 2.5 kg   /  5.51 lbs. Thèmes: Personnages  /   Origines: France  /   Genres: Symbolisme  /
-                        <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;">Violon Stradivarius Acrylique sur toile 3d. Cette toile représente le portrait de profil d-Antonio Stradivari fondu dans une de ses créations (violon). Stradivari est mort, Stradivarius vit encore 1644-1737 (93 ans).
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan.
-                        <br>54.5 x  65.5 cm  /   21.5 x  25.8 in. Poids 2.5 kg   /  5.51 lbs. Thèmes: Personnages  /   Origines: France  /   Genres: Symbolisme  /
-                        <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;</p>              
-                </div>
+            <div hx-get="/img/img2" hx-trigger="load" class="art-item">
+                <img src="images/bars.svg" alt="Art 2" class="htmx-indicator w-full h-auto">
             </div>
-            <div class="art-item">
-                <img src="images/img3.png" alt="Art 3" class="w-full h-auto">
-                <div>
-                    <h2 class="art-title" data-en="February of that year" data-fr="Février de cette année là">Février de cette année là</h2>
-                    <p class="art-description" 
-                        data-en="Fusion of tiger and woman, assemblage of mood and character.
-                        <br>Work protected by copyright.
-                        <br>Member: A.D.A.G.P Paris.
-                        <br>Member of the Taylor Foundation Paris.
-                        <br>Artist Works, Paintings, Acrylic. Author: Titan. 46 x  61 cm  /   18.1 x  24 in. Weight 1 kg   /  2.2 lbs. Themes: Life Scene  /   Origins: France  /   Genres: Cubism  /
-                        <br>Characteristics: Signed  /   Authenticity: Original  /   Types of Artists: Leisure Artists  /   Supports: On Canvas  /   Artistic Movement: French School  /   Period: Contemporary.
-                        <br>Copyright Titan&copy;"
-                        data-fr="Fusion tigre et femme, assemblage d'humeur et de caractère.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique. Auteur: Titan. 46 x  61 cm  /   18.1 x  24 in. Poids 1 kg   /  2.2 lbs.
-                        <br>Thèmes: Scène de Vie  /   Origines: France  /   Genres: Cubisme  /
-                        <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;">Fusion tigre et femme, assemblage d'humeur et de caractère.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique. Auteur: Titan. 46 x  61 cm  /   18.1 x  24 in. Poids 1 kg   /  2.2 lbs.
-                        <br>Thèmes: Scène de Vie  /   Origines: France  /   Genres: Cubisme  /
-                        <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;</p>
-                </div>
+            <div hx-get="/img/img3" hx-trigger="load" class="art-item">
+                <img src="images/bars.svg" alt="Art 3" class="htmx-indicator w-full h-auto">
             </div>
-            <div class="art-item">
-                <img src="images/img4.png" alt="Art 4" class="w-full h-auto">
-                <div>
-                    <h2 class="art-title" data-en="Elvis King" data-fr="Elvis King">Elvis King</h2>
-                    <p class="art-description"
-                        data-en="Profile portrait of Elvis Presley. King of Rock. Tribute to the great musician and performer of good old Rock'n Roll. Timeless reference of music from the 50s and 60s.
-                        <br>Created in September 2015 Rare work Inventory No. 2.0.1.5.
-                        <br>Work protected by copyright.
-                        <br>Member: A.D.A.G.P Paris.
-                        <br>Member of the Taylor Foundation Paris.
-                        <br>Artist Works, Paintings, Acrylic.
-                        <br>Author: Titan. 48 x  68 cm  /   18.9 x  26.8 in. Weight 4 kg   /  8.82 lbs.
-                        <br>Themes: Music, Jazz, Rock  /   Origins: France  /   Genres: Symbolism  /
-                        <br>Characteristics: Signed  /   Authenticity: Original  /   Types of Artists: Leisure Artists  /   Supports: On Wood  /   Artistic Movement: French School  /   Period: Contemporary.
-                        <br>Copyright Titan&copy;"
-                        data-fr="Portrait de profil d'Elvis Presley. King du Rock. Hommage au grand musicien et interprète du bon vieux Rock'n Roll. Référence intemporelle de la musique des années 50 et 60. Créé en Septembre 2015 Œuvre rarissime N° d'inventaire 2.0.1.5. Œuvre protégée par des droits d'auteur. Adhérent: A. D. A. G. P Paris. Membre de la Fondation Taylor Paris. Oeuvres d'Artistes, Peintures, Acrylique. Auteur: Titan. 48 x  68 cm  /   18.9 x  26.8 in. Poids 4 kg   /  8.82 lbs. Thèmes: Musique, Jazz, Rock  /   Origines: France  /   Genres: Symbolisme  /   Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Bois  /   Courant Artistique: École Française  /   Période: Contemporain. Copyright Titan&copy;">Portrait de profil d'Elvis Presley. King du Rock. Hommage au grand musicien et interprète du bon vieux Rock'n Roll. Référence intemporelle de la musique des années 50 et 60. Créé en Septembre 2015 Œuvre rarissime N° d'inventaire 2.0.1.5. Œuvre protégée par des droits d'auteur. Adhérent: A. D. A. G. P Paris. Membre de la Fondation Taylor Paris. Oeuvres d'Artistes, Peintures, Acrylique. Auteur: Titan. 48 x  68 cm  /   18.9 x  26.8 in. Poids 4 kg   /  8.82 lbs. Thèmes: Musique, Jazz, Rock  /   Origines: France  /   Genres: Symbolisme  /   Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Bois  /   Courant Artistique: École Française  /   Période: Contemporain. Copyright Titan&copy;</p>
-                </div>
+            <div hx-get="/img/img4" hx-trigger="load" class="art-item">
+                <img src="images/bars.svg" alt="Art 4" class="htmx-indicator w-full h-auto">
             </div>
-            <div class="art-item">
-                <img src="images/img5.png" alt="Art 5" class="w-full h-auto">
-                <div>
-                    <h2 class="art-title" data-en="The Umbrellas of Cherbourg" data-fr="Les parapluies de Cherbourg">Les parapluies de Cherbourg</h2>
-                    <p class="art-description"
-                        data-en="Year 2017. Acrylic on 3D canvas. Tribute to Catherine Deneuve and Jacques Demy for the film 'The Umbrellas of Cherbourg' from 1964.
-                        <br>Work protected by copyright.
-                        <br>Member: A.D.A.G.P Paris.
-                        <br>Member of the Taylor Foundation Paris. Artist Works, Paintings, Acrylic.
-                        <br>Author: Titan.
-                        <br>60 x  73 cm  /   23.6 x  28.7 in. Weight 1.5 kg   /  3.31 lbs.
-                        <br>Themes: Cinema, TV  /   Origins: France  /   Genres: Expressionism  /
-                        <br>Characteristics: Signed  /   Authenticity: Original  /   Types of Artists: Leisure Artists  /   Supports: On Canvas  /   Artistic Movement: French School  /   Period: Contemporary.
-                        <br>Copyright Titan&copy;"
-                        data-fr="Année 2017. Acrylique sur toile 3d. Hommage à Catherine Deneuve et Jacques Demy pour le film 'Les parapluies de Cherbourg' de 1964.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris. Membre de la Fondation Taylor Paris. Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan.
-                        <br>60 x  73 cm  /   23.6 x  28.7 in. Poids 1.5 kg   /  3.31 lbs.
-                        <br>Thèmes: Cinéma, TV  /   Origines: France  /   Genres: Expressionnisme  /
-                        <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;">Année 2017. Acrylique sur toile 3d. Hommage à Catherine Deneuve et Jacques Demy pour le film 'Les parapluies de Cherbourg' de 1964.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris. Membre de la Fondation Taylor Paris. Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan.
-                        <br>60 x  73 cm  /   23.6 x  28.7 in. Poids 1.5 kg   /  3.31 lbs.
-                        <br>Thèmes: Cinéma, TV  /   Origines: France  /   Genres: Expressionnisme  /
-                        <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;"</p>
-                </div>
+            <div hx-get="/img/img5" hx-trigger="load" class="art-item">
+                <img src="images/bars.svg" alt="Art 5" class="htmx-indicator w-full h-auto">
             </div>
-            <div class="art-item">
-                <img src="images/img6.png" alt="Art 6" class="w-full h-auto">
-                <div>
-                    <h2 class="art-title" data-en="Blood of a Poet" data-fr="Sang d'un poète">Sang d'un poète</h2>
-                    <p class="art-description"
-                        data-en="Poet in full inspiration, laying his moods on paper with a goose feather. Feather also used for calligraphy of his writings transcribing his thoughts of the moment.
-                        <br>Work protected by copyright.
-                        <br>Member: A.D.A.G.P Paris.
-                        <br>Member of the Taylor Foundation Paris.
-                        <br>Artist Works, Paintings, Acrylic.
-                        <br>Author: Titan. 36.5 x  46.5 cm  /   14.4 x  18.3 in. Weight 1.5 kg   /  3.31 lbs.
-                        <br>Themes: Portrait, Self-portrait  /   Origins: France  /   Genres: Expressionism  /
-                        <br>Characteristics: Framed  /   Authenticity: Original  /   Types of Artists: Leisure Artists  /   Supports: On Paper  /   Artistic Movement: French School  /   Period: Contemporary.
-                        <br>Copyright Titan&copy;"
-                        data-fr="Poète en pleine inspiration, couchant sur le papier ses humeurs à la plume d'oie. Plume lui servant notamment à la calligraphie de ses écrits retranscrivant ses pensées du moment.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan. 36.5 x  46.5 cm  /   14.4 x  18.3 in. Poids 1.5 kg   /  3.31 lbs.
-                        <br>Thèmes: Portrait, Autoportrait  /   Origines: France  /   Genres: Expressionnisme  /
-                        <br>Caractéristiques: Encadrée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Papier  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;">Poète en pleine inspiration, couchant sur le papier ses humeurs à la plume d'oie. Plume lui servant notamment à la calligraphie de ses écrits retranscrivant ses pensées du moment.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan. 36.5 x  46.5 cm  /   14.4 x  18.3 in. Poids 1.5 kg   /  3.31 lbs.
-                        <br>Thèmes: Portrait, Autoportrait  /   Origines: France  /   Genres: Expressionnisme  /
-                        <br>Caractéristiques: Encadrée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Papier  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;</p>
-                </div>
+            <div hx-get="/img/img6" hx-trigger="load" class="art-item">
+                <img src="images/bars.svg" alt="Art 6" class="htmx-indicator w-full h-auto">
             </div>
-            <div class="art-item">
-                <img src="images/img7.png" alt="Art 7" class="w-full h-auto">
-                <div>
-                    <h2 class="art-title" data-en="French Kiss" data-fr="French Kiss">French Kiss</h2>
-                    <p class="art-description"
-                        data-en="French Kiss is a cubism work with 3D inlays. Sharp contours and pleasant colors for a balanced and aesthetic perception of the expression of love. Acrylic on canvas with metal and plastic relief inlay.
-                        <br>Work protected by copyright.
-                        <br>Member: A.D.A.G.P Paris.
-                        <br>Member of the Taylor Foundation Paris.
-                        <br>Artist Works, Paintings, Acrylic.
-                        <br>Author: Titan.
-                        <br>60 x  73 cm  /   23.6 x  28.7 in. Weight 1.2 kg   /  2.65 lbs.
-                        <br>Themes: Abstract  /   Origins: France  /   Genres: Cubism  /
-                        <br>Characteristics: Signed  /   Authenticity: Original  /   Types of Artists: Leisure Artists  /   Supports: On Canvas  /   Artistic Movement: French School  /   Period: Contemporary.
-                        <br>Copyright Titan&copy;"
-                        data-fr="French Kiss est une œuvre cubisme avec incrustations 3d. Contours nets et couleurs agréables pour une perception équilibrée et esthétique de l'expression de l'amour. Acrylique sur toile avec incrustation métal et plastique en relief.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan.
-                        <br>60 x  73 cm  /   23.6 x  28.7 in. Poids 1.2 kg   /  2.65 lbs.
-                        <br>Thèmes: Abstrait  /   Origines: France  /   Genres: Cubisme  /
-                        <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;">French Kiss est une œuvre cubisme avec incrustations 3d. Contours nets et couleurs agréables pour une perception équilibrée et esthétique de l'expression de l'amour. Acrylique sur toile avec incrustation métal et plastique en relief.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan.
-                        <br>60 x  73 cm  /   23.6 x  28.7 in. Poids 1.2 kg   /  2.65 lbs.
-                        <br>Thèmes: Abstrait  /   Origines: France  /   Genres: Cubisme  /
-                        <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;</p>
-                </div>
+            <div hx-get="/img/img7" hx-trigger="load" class="art-item">
+                <img src="images/bars.svg" alt="Art 7" class="htmx-indicator w-full h-auto">
             </div>
-            <div class="art-item">
-                <img src="images/img8.png" alt="Art 8" class="w-full h-auto">
-                <div>
-                    <h2 class="art-title" data-en="Periwinkles" data-fr="Pervenches">Pervenches</h2>
-                    <p class="art-description"
-                        data-en="Periwinkle flowers in a still life bouquet.
-                        <br>Work protected by copyright.
-                        <br>Member: A.D.A.G.P Paris.
-                        <br>Member of the Taylor Foundation Paris.
-                        <br>Artist Works, Paintings, Acrylic.
-                        <br>Author: Titan.
-                        <br>38 x  46 cm  /   15 x  18.1 in. Weight 0.5 kg   /  1.1 lbs.
-                        <br>Themes: Flower, Tree, Garden  /   Origins: France  /   Genres: Realism  /
-                        <br>Characteristics: Signed  /   Authenticity: Original  /   Types of Artists: Leisure Artists  /   Supports: On Canvas  /   Artistic Movement: French School  /   Period: Contemporary.
-                        <br>Copyright Titan&copy;"
-                        data-fr="Fleurs pervenches en bouquet nature morte.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan.
-                        <br>38 x  46 cm  /   15 x  18.1 in. Poids 0.5 kg   /  1.1 lbs.
-                        <br>Thèmes: Fleur, Arbre, Jardin  /   Origines: France  /   Genres: Réalisme  /
-                        <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;">Fleurs pervenches en bouquet nature morte.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan.
-                        <br>38 x  46 cm  /   15 x  18.1 in. Poids 0.5 kg   /  1.1 lbs.
-                        <br>Thèmes: Fleur, Arbre, Jardin  /   Origines: France  /   Genres: Réalisme  /
-                        <br>Caractéristiques: Signée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;</p>
-                </div>
+            <div hx-get="/img/img8" hx-trigger="load" class="art-item">
+                <img src="images/bars.svg" alt="Art 8" class="htmx-indicator w-full h-auto">
             </div>
-            <div class="art-item">
-                <img src="images/img9.png" alt="Art 9" class="w-full h-auto">
-                <div>
-                    <h2 class="art-title" data-en="Ghost of the Seas of France" data-fr="France fantôme des océans">France fantôme des océans</h2>
-                    <p class="art-description"
-                        data-en="Acrylic on 3D canvas. Specter of the mythical liner 'France' sailing on water polluted by its own rust. Signature on the back.
-                        <br>Work protected by copyright.
-                        <br>Member: A.D.A.G.P Paris.
-                        <br>Member of the Taylor Foundation Paris.
-                        <br>Artist Works, Paintings, Acrylic.
-                        <br>Author: Titan.
-                        <br>42 x  59 cm  /   16.5 x  23.2 in. Weight 1.5 kg   /  3.31 lbs.
-                        <br>Themes: Fantasy  /   Origins: France  /   Genres: Art Nouveau  /
-                        <br>Characteristics: Framed  /   Authenticity: Original  /   Types of Artists: Leisure Artists  /   Supports: On Canvas  /   Artistic Movement: French School  /   Period: Contemporary.\
-                        <br>Copyright Titan&copy;"
-                        data-fr="Acrylique sur toile en 3d. Spectre du paquebot mythique 'France' voguant sur l'eau polluée par sa propre rouille signature au dos.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan.
-                        <br>42 x  59 cm  /   16.5 x  23.2 in. Poids 1.5 kg   /  3.31 lbs.
-                        <br>Thèmes: Fantastique  /   Origines: France  /   Genres: Art Nouveau  /
-                        <br>Caractéristiques: Encadrée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;">Acrylique sur toile en 3d. Spectre du paquebot mythique 'France' voguant sur l'eau polluée par sa propre rouille signature au dos.
-                        <br>Œuvre protégée par des droits d'auteur.
-                        <br>Adhérent: A. D. A. G. P Paris.
-                        <br>Membre de la Fondation Taylor Paris.
-                        <br>Oeuvres d'Artistes, Peintures, Acrylique.
-                        <br>Auteur: Titan.
-                        <br>42 x  59 cm  /   16.5 x  23.2 in. Poids 1.5 kg   /  3.31 lbs.
-                        <br>Thèmes: Fantastique  /   Origines: France  /   Genres: Art Nouveau  /
-                        <br>Caractéristiques: Encadrée  /   Authenticité: Original  /   Types d'Artistes: Artistes de loisirs  /   Supports: Sur Toile  /   Courant Artistique: École Française  /   Période: Contemporain.
-                        <br>Copyright Titan&copy;</p>
-                </div>
+            <div hx-get="/img/img9" hx-trigger="load" class="art-item">
+                <img src="images/bars.svg" alt="Art 9" class="htmx-indicator w-full h-auto">
             </div>
         </section>
 
@@ -341,7 +79,6 @@
     <script src="js/cookies.js"></script>
     <script src="js/language-switch.js"></script>
     <!-- HTMX library -->
-    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
 
 </body>
 </html>
